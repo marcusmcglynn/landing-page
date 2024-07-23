@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    background-color: #F8FCDA;
+    box-sizing: border-box;
+    font-family: "Lato" sans-serif;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+}
+
+header {
+    padding: 10px 15px;
+    background-color: #495867;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 15px;
+}
+
+.info a {
+    text-decoration: none;
+    color: white;
+    font-family: "Playwrite CU", cursive;
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+nav {
+    display: flex;
+    background-color: #354F52;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a {
+    padding: 8px;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+
+main {
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+main h1 {
+    text-align: center;
+    grid-column: span 12;
+    font-family: "Playwrite CU", cursive;
+    font-size: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+main img {
+    margin: 20px auto;
+    grid-column: span 7;
+}
+
+main h2 {
+    grid-column: span 12;
+    text-align: center;
+    margin: 0;
+}
+
+main div {
+    grid-column: span 12;
+    background-color: #56A3A6;
+    justify-self: center;
+    padding: 10px;
+}
+
+main .welcome {
+    text-align: center;
+    grid-column: 8 / span 5;
+    background-color: #56A3A6;
+    font-family: "Oswald", sans-serif;
+    color: white;
+    font-size: 18px;
+    margin-left: 20px;
+    padding: 35px;
+}
+.welcome h2 {
+    text-align: center;
+}
+
+main #container {
+    background-color: aqua;
+    grid-column: span 12;
+}
+
+.cards {
+    background-color: #9eecd2;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    grid-column: span 4;
+    text-align: center;
+    font-size: 18px;
+    padding: 25px;
+}
+
+.top-games {
+    background-color: #56A3A6;
+    justify-self: center;
+    padding: 10px;
+}
+
+.cards2 {
+    background-color: #495867;
+    color: #fafafa;
+    font-family: "Roboto Mono", monospace;
+    grid-column: span 6;
+    text-align: center;
+    padding: 25px;
+}
+
+#card3 {
+    background-color: aqua;
+}
+
+
+
+
+footer {
+    display: flex;
+    background-color: #354F52;
+    justify-content: center;
+    padding: 13px;
+    height: 35px;
+}
+
+footer a {
+    color: white;
+    font-size: 25px;
+    padding: 15px;
+}
+
+/* ! Media */
+
+@media (max-width: 1250px) {
+    main img {
+        grid-column: 1 / span 12;
+    }
+
+    main .welcome {
+        grid-column: span 12;
+    }
+}
