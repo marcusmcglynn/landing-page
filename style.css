@@ -66,6 +66,8 @@ main h1 {
 main img {
     margin: 20px auto;
     grid-column: span 7;
+    height: 450px;
+    width: 550px;
 }
 
 main h2 {
@@ -154,5 +156,36 @@ footer a {
 
     main .welcome {
         grid-column: span 12;
+    }
+
+    .cards {
+        grid-column: span 6;
+    }
+
+    #card3 {
+        grid-column: span 12;
+    }
+}
+
+@media (max-width: 768px) {
+    .info {
+        justify-content: center;
+    }
+
+    main img {
+        height: 250px;
+        width: 350px;
+    }
+
+    .cards {
+        grid-column: span 6;
+    }
+
+    .cards2 {
+        grid-column: span 12;
+    }
+
+    footer a {
+        font-size: 19px;
     }
 }
