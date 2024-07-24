@@ -32,6 +32,11 @@ header {
     margin-left: 15px;
 }
 
+.info img {
+    height: 50px;
+    width: 70px;
+}
+
 nav {
     display: flex;
     background-color: #354F52;
@@ -187,5 +192,9 @@ footer a {
 
     footer a {
         font-size: 19px;
+    }
+
+    main h1 {
+        font-size: 40px;
     }
 }
